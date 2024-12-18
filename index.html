@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Flower Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-lg">
+      <div class="container mx-auto px-4 py-8 flex justify-between items-center"> <!-- Increased py-4 to py-8 -->
+        <!-- Enhanced Logo Design -->
+        <a href="#" class="flex items-center space-x-2">
+          <div class="w-8 h-8 bg-pink-600 rounded-full flex items-center justify-center">
+            <span class="text-white text-lg font-bold">B</span>
+          </div>
+          <span class="text-2xl font-bold text-pink-600">Bloom<span class="text-gray-800">Shop</span></span>
+        </a>
+        <ul class="hidden md:flex space-x-8 ml-10"> 
+          <li>
+            <a href="#" class="text-gray-700 font-semibold hover:text-pink-600 transition-all duration-300">Home</a>
+          </li>
+          <li>
+            <a href="#" class="text-gray-700 font-semibold hover:text-pink-600 transition-all duration-300">Shop</a>
+          </li>
+          <li>
+            <a href="#" class="text-gray-700 font-semibold hover:text-pink-600 transition-all duration-300">Contact</a>
+          </li>
+        </ul>
+        <!-- Search and Cart Icons -->
+        <div class="flex items-center space-x-6">
+          <!-- Search Icon -->
+          <a href="#" class="text-gray-700 hover:text-pink-600 transition-all duration-300">
+            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M11 18a7 7 0 1 1 0-14 7 7 0 0 1 0 14ZM15 11a4 4 0 1 0-8 0 4 4 0 0 0 8 0Z"/>
+            </svg>
+          </a>
+          <!-- Cart Icon -->
+          <a href="#" class="text-gray-700 hover:text-pink-600 transition-all duration-300">
+            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm10 0a4 4 0 1 0 0 8 4 4 0 0 0 0-8z" />
+            </svg>
+          </a>
+          <div class="md:hidden">
+            <button class="text-gray-700 focus:outline-none">&#9776;</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    
+    <section class="relative bg-pink-600 text-white py-20 overflow-hidden">
+      <!-- Background with Floral Images and Gradient -->
+      <div class="absolute inset-0">
+        <div class="h-full w-full bg-gradient-to-br from-pink-700 to-pink-400 opacity-80"></div>
+        <div class="absolute -top-10 -left-10">
+          <img src="https://via.placeholder.com/300x300/FFB6C1/FFFFFF?text=Flower1" class="w-64 h-64 opacity-30 rotate-12" alt="BloomShop" />
+        </div>
+        <div class="absolute -bottom-10 -right-10">
+          <img src="https://via.placeholder.com/300x300/FFC0CB/FFFFFF?text=Flower2" class="w-64 h-64 opacity-30 -rotate-12" alt="BloomaShop" />
+        </div>
+      </div>
+    
+      <!-- Content -->
+      <div class="relative container mx-auto text-center px-6 z-10">
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-6 drop-shadow-lg">
+          Discover the Beauty of Fresh Blooms
+        </h1>
+        <p class="text-lg md:text-2xl mb-8 font-light">
+          Perfect flowers for your special moments, delivered with care and love.
+        </p>
+        <a
+          href="#"
+          class="inline-block bg-white text-pink-600 font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-gray-200 transition-all">
+          Explore Collection
+        </a>
+      </div>
+    
+      <!-- Decorative Circles -->
+      <div class="absolute top-20 left-1/3 w-48 h-48 bg-white rounded-full opacity-10"></div>
+      <div class="absolute bottom-20 right-1/4 w-72 h-72 bg-white rounded-full opacity-10"></div>
+    </section>
+    
+    <!-- Product Showcase -->
+    <section class="py-12">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">
+          Featured Bouquets
+        </h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          <!-- Product Card -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img
+              src="/img/roes.jpg"
+              alt="Product Image"
+              class="w-full h-48 object-cover" />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800">Romantic Roses</h3>
+              <p class="text-gray-600 mt-2">$49.99</p>
+              <button
+                class="mt-4 bg-pink-600 text-white py-2 px-4 rounded hover:bg-pink-500">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img
+              src="/img/wind flora.jpg"
+              alt="Product Image"
+              class="w-full h-48 object-cover" />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800">Wild Flora</h3>
+              <p class="text-gray-600 mt-2">$39.99</p>
+              <button
+                class="mt-4 bg-pink-600 text-white py-2 px-4 rounded hover:bg-pink-500">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img
+              src="/img/Orchid.jpg"
+              alt="Product Image"
+              class="w-full h-48 object-cover" />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800">Orchid</h3>
+              <p class="text-gray-600 mt-2">$27.99</p>
+              <button
+                class="mt-4 bg-pink-600 text-white py-2 px-4 rounded hover:bg-pink-500">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img
+              src="/img/Dried Flower.jpg"
+              alt="Product Image"
+              class="w-full h-48 object-cover" />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800">Dried Flower</h3>
+              <p class="text-gray-600 mt-2">$20.99</p>
+              <button
+                class="mt-4 bg-pink-600 text-white py-2 px-4 rounded hover:bg-pink-500">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img
+              src="/img/white rose.jpeg"
+              alt="Product Image"
+              class="w-full h-48 object-cover" />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800">White Rose</h3>
+              <p class="text-gray-600 mt-2">$69.99</p>
+              <button
+                class="mt-4 bg-pink-600 text-white py-2 px-4 rounded hover:bg-pink-500">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img
+              src="/img/sun flower.png"
+              alt="Product Image"
+              class="w-full h-48 object-cover" />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800">Sun Flower</h3>
+              <p class="text-gray-600 mt-2">$24.99</p>
+              <button
+                class="mt-4 bg-pink-600 text-white py-2 px-4 rounded hover:bg-pink-500">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img
+              src="/img/Gift flower.jpg"
+              alt="Product Image"
+              class="w-full h-48 object-cover" />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800">Gift Flower</h3>
+              <p class="text-gray-600 mt-2">$34.99</p>
+              <button
+                class="mt-4 bg-pink-600 text-white py-2 px-4 rounded hover:bg-pink-500">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img
+              src="/img/Purple Rose.jpg"
+              alt="Product Image"
+              class="w-full h-48 object-cover" />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800">Purple Rose</h3>
+              <p class="text-gray-600 mt-2">$37.99</p>
+              <button
+                class="mt-4 bg-pink-600 text-white py-2 px-4 rounded hover:bg-pink-500">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img
+              src="/img/tulip.jpeg"
+              alt="Product Image"
+              class="w-full h-48 object-cover" />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800">Tulip</h3>
+              <p class="text-gray-600 mt-2">$59.99</p>
+              <button
+                class="mt-4 bg-pink-600 text-white py-2 px-4 rounded hover:bg-pink-500">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img
+              src="/img/crochet.jpg"
+              alt="Product Image"
+              class="w-full h-48 object-cover" />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800">Crochet</h3>
+              <p class="text-gray-600 mt-2">$22.99</p>
+              <button
+                class="mt-4 bg-pink-600 text-white py-2 px-4 rounded hover:bg-pink-500">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img
+              src="/img/lily.jpg"
+              alt="Product Image"
+              class="w-full h-48 object-cover" />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800">Lily Flower</h3>
+              <p class="text-gray-600 mt-2">$42.99</p>
+              <button
+                class="mt-4 bg-pink-600 text-white py-2 px-4 rounded hover:bg-pink-500">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img
+              src="/img/diasies.png"
+              alt="Product Image"
+              class="w-full h-48 object-cover" />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800">Diasies</h3>
+              <p class="text-gray-600 mt-2">$18.99</p>
+              <button
+                class="mt-4 bg-pink-600 text-white py-2 px-4 rounded hover:bg-pink-500">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Services -->
+    <section id="services" class="bg-gray-50 py-12 relative overflow-hidden">
+      <!-- Decorative Background -->
+      <div class="absolute top-0 left-0 w-32 h-32 bg-pink-300 rounded-full opacity-25 transform -translate-x-10 -translate-y-10"></div>
+      <div class="absolute bottom-0 right-0 w-48 h-48 bg-pink-400 rounded-full opacity-25 transform translate-x-10 translate-y-10"></div>
+    
+      <div class="container mx-auto px-4 text-center relative z-10">
+        <h2 class="text-4xl font-extrabold text-gray-800 mb-6">Our Services</h2>
+        <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+          At BloomShop, we make gifting flowers a memorable and hassle-free experience.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="p-8 bg-white shadow-lg rounded-lg hover:shadow-2xl transition-shadow duration-300">
+            <div class="w-16 h-16 mx-auto mb-4 bg-pink-100 text-pink-600 rounded-full flex items-center justify-center">
+              <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M20 6h-5V4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2ZM9 4h6v2H9V4Zm11 16H4V8h16v12ZM7 10h10v2H7v-2Zm0 4h10v2H7v-2Zm0 4h6v2H7v-2Z" /></svg>
+            </div>
+            <h3 class="text-2xl font-semibold text-pink-600 mb-2">Same-Day Delivery</h3>
+            <p class="text-gray-600">
+              Order before noon, and we'll deliver fresh blooms to your loved ones the very same day.
+            </p>
+          </div>
+          <div class="p-8 bg-white shadow-lg rounded-lg hover:shadow-2xl transition-shadow duration-300">
+            <div class="w-16 h-16 mx-auto mb-4 bg-pink-100 text-pink-600 rounded-full flex items-center justify-center">
+              <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2Zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8Zm0-14-6 6h4v6h4v-6h4l-6-6Z" /></svg>
+            </div>
+            <h3 class="text-2xl font-semibold text-pink-600 mb-2">Custom Bouquets</h3>
+            <p class="text-gray-600">
+              Design a unique bouquet with your favorite flowers for any occasion or celebration.
+            </p>
+          </div>
+          <div class="p-8 bg-white shadow-lg rounded-lg hover:shadow-2xl transition-shadow duration-300">
+            <div class="w-16 h-16 mx-auto mb-4 bg-pink-100 text-pink-600 rounded-full flex items-center justify-center">
+              <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2ZM4 12c0-2.21.9-4.21 2.35-5.65L16.65 17.65C15.21 19.1 13.21 20 12 20c-4.42 0-8-3.58-8-8ZM12 4c4.42 0 8 3.58 8 8 0 1.21-.9 3.21-2.35 4.65L7.35 6.35C8.79 4.9 10.79 4 12 4Z" /></svg>
+            </div>
+            <h3 class="text-2xl font-semibold text-pink-600 mb-2">Event Decoration</h3>
+            <p class="text-gray-600">
+              Transform your weddings, birthdays, and events with our stunning floral decorations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Why Choose Us -->
+    <section class="bg-white py-16 relative overflow-hidden">
+      <!-- Decorative Background Elements -->
+      <div class="absolute top-0 left-0 w-40 h-40 bg-pink-200 rounded-full opacity-30 -translate-x-10 -translate-y-10"></div>
+      <div class="absolute bottom-0 right-0 w-56 h-56 bg-pink-300 rounded-full opacity-20 translate-x-10 translate-y-10"></div>
+    
+      <!-- Content -->
+      <div class="container mx-auto px-4 text-center relative z-10">
+        <h2 class="text-4xl font-extrabold text-gray-800 mb-10">Why Choose Us?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <!-- Card 1 -->
+          <div class="p-8 bg-gray-50 shadow-lg rounded-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+            <div class="w-16 h-16 mx-auto mb-4 bg-pink-100 text-pink-600 rounded-full flex items-center justify-center">
+              <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2Zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8Zm-1-13h2v6h-2V7Zm0 8h2v2h-2v-2Z" /></svg>
+            </div>
+            <h3 class="text-2xl font-semibold mb-2 text-pink-600">Fresh and Local</h3>
+            <p class="text-gray-600">We source our flowers directly from trusted local growers to ensure lasting freshness and quality.</p>
+          </div>
+          <!-- Card 2 -->
+          <div class="p-8 bg-gray-50 shadow-lg rounded-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+            <div class="w-16 h-16 mx-auto mb-4 bg-pink-100 text-pink-600 rounded-full flex items-center justify-center">
+              <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2Zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8Zm2-10h-4v6h2v-4h2v-2Zm-2-6h2v2h-2V4Z" /></svg>
+            </div>
+            <h3 class="text-2xl font-semibold mb-2 text-pink-600">Affordable Prices</h3>
+            <p class="text-gray-600">Our beautiful arrangements are available at prices that fit every budget without compromising on quality.</p>
+          </div>
+          <!-- Card 3 -->
+          <div class="p-8 bg-gray-50 shadow-lg rounded-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+            <div class="w-16 h-16 mx-auto mb-4 bg-pink-100 text-pink-600 rounded-full flex items-center justify-center">
+              <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2Zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8Zm-1-13h2v6h-2V7Zm0 8h2v2h-2v-2Z" /></svg>
+            </div>
+            <h3 class="text-2xl font-semibold mb-2 text-pink-600">Exceptional Service</h3>
+            <p class="text-gray-600">We guarantee exceptional service and care in every order we deliver to make your moments special.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Promotions -->
+    <section class="bg-pink-100 py-16 relative overflow-hidden">
+      <!-- Decorative Background Elements -->
+      <div class="absolute top-0 left-0 w-40 h-40 bg-pink-300 rounded-full opacity-20 -translate-x-10 -translate-y-10 animate-pulse"></div>
+      <div class="absolute bottom-0 right-0 w-56 h-56 bg-pink-400 rounded-full opacity-20 translate-x-10 translate-y-10 animate-pulse"></div>
+      <div class="absolute top-1/2 left-1/3 w-72 h-72 bg-gradient-to-r from-pink-400 to-pink-300 rounded-full opacity-30 blur-2xl"></div>
+    
+      <!-- Content -->
+      <div class="container mx-auto px-6 text-center relative z-10">
+        <h2 class="text-4xl font-extrabold text-gray-800 mb-8 drop-shadow-md">
+          Special Promotion
+        </h2>
+        <p class="text-xl text-gray-700 mb-6 leading-relaxed">
+          Don't miss out! Enjoy <span class="font-bold text-pink-600">20% OFF</span> all bouquets for a limited time.
+        </p>
+        <a
+          href="#"
+          class="inline-block bg-pink-600 text-white font-semibold py-4 px-8 rounded-full shadow-lg hover:bg-pink-500 hover:scale-105 transition-all duration-300">
+          Shop Now
+        </a>
+      </div>
+    
+      <!-- Decorative Flower Image -->
+      <div class="absolute bottom-0 left-0 w-48 h-48 opacity-20">
+        <img
+          src="https://via.placeholder.com/200x200/FFB6C1/FFFFFF?text=Flower"
+          alt="Decorative Flower"
+          class="w-full h-full object-contain rotate-12" />
+      </div>
+      <div class="absolute top-0 right-0 w-48 h-48 opacity-20">
+        <img
+          src="https://via.placeholder.com/200x200/FFC0CB/FFFFFF?text=Flower"
+          alt="Decorative Flower"
+          class="w-full h-full object-contain -rotate-12" />
+      </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12 relative overflow-hidden">
+      <!-- Decorative Background Elements -->
+      <div class="absolute top-0 left-0 w-32 h-32 bg-pink-600 rounded-full opacity-20 -translate-x-10 -translate-y-10"></div>
+      <div class="absolute bottom-0 right-0 w-40 h-40 bg-pink-500 rounded-full opacity-20 translate-x-10 translate-y-10"></div>
+    
+      <div class="container mx-auto px-6 text-center relative z-10">
+        <!-- Logo and Tagline -->
+        <div class="mb-6 flex justify-center items-center space-x-3">
+          <div class="w-10 h-10 bg-pink-600 rounded-full flex items-center justify-center">
+            <span class="text-white font-bold text-lg">B</span>
+          </div>
+          <span class="text-2xl font-bold">BloomShop</span>
+        </div>
+    
+        <p class="text-sm mb-4 max-w-md mx-auto">
+          Bringing you the freshest flowers for every special occasion. Quality and beauty in every bouquet.
+        </p>
+    
+        <!-- Navigation Links -->
+        <div class="flex justify-center space-x-6 mb-4">
+          <a href="#" class="text-gray-300 hover:text-pink-400 transition-colors duration-300">Privacy Policy</a>
+          <a href="#" class="text-gray-300 hover:text-pink-400 transition-colors duration-300">Terms of Service</a>
+          <a href="#" class="text-gray-300 hover:text-pink-400 transition-colors duration-300">Contact Us</a>
+        </div>
+    
+        <!-- Social Media Links -->
+        <div class="flex justify-center space-x-6 mb-4">
+          <a href="#" class="hover:text-pink-400 transition-colors duration-300">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M22 12A10 10 0 1 0 12 22a10 10 0 0 0 10-10ZM8 10h2V8h2V6h-2V5a1 1 0 0 1 1-1h1V2h-2a3 3 0 0 0-3 3v1H6v2h2v6h2v-6ZM16 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm-2 4a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z"/></svg>
+          </a>
+          <a href="#" class="hover:text-pink-400 transition-colors duration-300">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2.04a10 10 0 0 0-3.17 19.5c.5.1.68-.22.68-.49v-1.73c-2.78.6-3.37-1.34-3.37-1.34-.46-1.17-1.11-1.48-1.11-1.48-.91-.63.07-.62.07-.62 1 .07 1.52 1.03 1.52 1.03.9 1.55 2.37 1.1 2.94.84.09-.66.35-1.1.63-1.36-2.22-.25-4.56-1.11-4.56-4.93 0-1.09.39-1.99 1.03-2.7-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03a9.6 9.6 0 0 1 5 0c1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.7 0 3.83-2.34 4.68-4.57 4.92.36.31.68.92.68 1.85v2.74c0 .27.18.6.68.5A10 10 0 0 0 12 2.04Z"/></svg>
+          </a>
+        </div>
+    
+        <p class="text-sm">&copy; 2024 BloomShop. All rights reserved.</p>
+      </div>
+    </footer>
+    
+  </body>
+</html>
